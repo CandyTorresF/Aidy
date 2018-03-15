@@ -1,0 +1,88 @@
+body {
+  background-color: #FFFFFF;
+  font-family: arial, helvetica, sans-serif;
+  font-size: 0.6em;
+}
+
+.logo{
+  margin: auto;
+  padding-top: 20px;
+    padding-right: 2px;
+
+
+}
+.container 
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+        transform: translateY(-50%) translateX(-50%);
+  width: 300px;
+  height: 350px;
+  border-radius: 5px;
+  background-color: #808184;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.input-wrapper{
+    position: relative;
+    border-radius: 5px;
+    padding-top: 10px;
+    text-align: center;
+    text-align-last: center;
+}
+
+.container .input-wrapper{
+    padding-top: 20px;
+    border-radius: 5px;
+
+
+}
+
+#user{
+border-radius: 8px;
+    width: 220px;
+    height: 30px;
+
+}
+
+#pass{
+border-radius: 8px;
+    width: 220px;
+    height: 30px;
+
+}
+.container button {
+  outline: none;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  background-color: #1db100;
+  color: #e8e8e8;
+  border: none;
+  width: 220px;
+    height: 30px;
+  padding: 1.2em 0;
+  margin: 4em auto;
+  display: block;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+  font-family: 'Varela Round', sans-serif;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

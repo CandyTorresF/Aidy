@@ -1,0 +1,45 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+#contentDivision{
+
+	height: 1500px;
+	width: 1260px;
+	padding-top: 30px;
+	padding-left: 70px;
+
+}
+
+.logo{
+	padding-left: 650px;
+	padding-top: 10px;
+
+}
+
+.franja{
+	background-color: #002582;
+	height: 80px;
+}
+
+#btnExit{
+	background:none!important;
+	color: #FFFFFF;
+	border:none;
+	position: relative;
+	left: 1324px;
+	top: -63px;
+	font-size: 16px;
+	padding-top: 20px;
+
+
+}
+
+.Title{
+	font-size: large;
+	color: black;
+	padding-left: 150px;
+	font-family: 'Roboto', sans-serif;
+
+}

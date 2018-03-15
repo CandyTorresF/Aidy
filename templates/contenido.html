@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src ="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.js"></script>
+    <link rel="stylesheet" href="contenido.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <script type="text/javascript">
+            data = {{data | tojson}};
+    </script>
+
+
+</head>
+<body>
+    <div class = "franja">
+        <div class="logo">
+            <img src="images/logo.png" width="150px" height="50px">
+        </div>
+        <form action = "/logout" method = "POST">
+         <button type = "submit" value="submit" id = "btnExit">Logout</button>
+        </form>
+    </div>
+
+
+	<div id="contentDivision" align="center">
+		<div class="graphTable">    
+        	<div class="graphContainer fade">
+                <div class="Title">
+                    <p>Porcentaje de cumplimiento por tipo de profesional</p>
+                </div>
+            	<canvas id="myChart"></canvas>
+        	</div>
+    	</div>
+
+        <!--
+    	<div class="graphTable"> 
+        	<div class="graphContainer fade">
+            	<canvas id="myChart2"></canvas>
+        	</div>
+    	</div>
+
+    	<div class="graphTable"> 
+        	<div class="graphContainer fade">
+             	<canvas id="myChart3"></canvas>
+        	</div>
+    	</div>
+
+    	<div class="graphTable"> 
+        	<div class="graphContainer fade">
+             	<canvas id="myChart4"></canvas>
+        	</div>
+    	</div>
+
+    	<div class="graphTable"> 
+        	<div class="graphContainer fade">
+             	<canvas id="myChart5"></canvas>
+        	</div>
+    	</div>
+    	-->
+
+    	<div class="graphTable"> 
+        	<div class="graphContainer fade">
+                <div class="Title">
+                    <p>Porcentaje de cumplimiento en hrs.</p>
+                </div>
+             	<canvas id="myChart6"></canvas>
+        	</div>
+    	</div>
+    <!--
+    	<div class="graphTable"> 
+        	<div class="graphContainer fade">
+             	<canvas id="myChart7"></canvas>
+        	</div>
+    	</div>
+    	-->
+
+
+    </div>
+<script src = "logout.js"></script>
+<script src = "tipoProf.js"></script>
+
+</body>
+</html>
