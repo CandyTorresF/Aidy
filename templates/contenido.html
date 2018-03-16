@@ -10,60 +10,69 @@
             data = {{data | tojson}};
     </script>
 
+    <script>
+        function displayDate()
+        {
+            var today = new Date();
+            today.setDate(today.getDate()-1);
+            var yyyy = today.getFullYear().toString();
+
+            var month = new Array();
+            month[0] = "Enero";
+            month[1] = "Febrero";
+            month[2] = "Marzo";
+            month[3] = "Abril";
+            month[4] = "Mayo";
+            month[5] = "Junio";
+            month[6] = "Julio";
+            month[7] = "Agosto";
+            month[8] = "Septiembre";
+            month[9] = "Octubre";
+            month[10] = "Noviembre";
+            month[11] = "Diciembre";
+
+            var mm = month[today.getMonth()+1];
+            var dd = today.getDate().toString();
+                dd = dd.length==2?dd:"0"+dd;
+
+            var yesterday =  dd+" de "+mm+" "+yyyy ;
+
+            return yesterday;
+        }
+    </script>
 
 </head>
 <body>
     <div class = "franja">
         <div class="logo">
-            <img src="images/logo.png" width="150px" height="50px">
+            <img src="images/logo.png" width="150px" height="50px" class="center">
         </div>
         <form action = "/logout" method = "POST">
          <button type = "submit" value="submit" id = "btnExit">Logout</button>
         </form>
     </div>
 
-
 	<div id="contentDivision" align="center">
+
 		<div class="graphTable">    
         	<div class="graphContainer fade">
-                <div class="Title">
+                <div class="title1">
                     <p>Porcentaje de cumplimiento por tipo de profesional</p>
+                    <p id="fecha1"></p>
                 </div>
             	<canvas id="myChart"></canvas>
         	</div>
     	</div>
 
-        <!--
     	<div class="graphTable"> 
         	<div class="graphContainer fade">
-            	<canvas id="myChart2"></canvas>
-        	</div>
-    	</div>
-
-    	<div class="graphTable"> 
-        	<div class="graphContainer fade">
-             	<canvas id="myChart3"></canvas>
-        	</div>
-    	</div>
-
-    	<div class="graphTable"> 
-        	<div class="graphContainer fade">
-             	<canvas id="myChart4"></canvas>
-        	</div>
-    	</div>
-
-    	<div class="graphTable"> 
-        	<div class="graphContainer fade">
-             	<canvas id="myChart5"></canvas>
-        	</div>
-    	</div>
-    	-->
-
-    	<div class="graphTable"> 
-        	<div class="graphContainer fade">
-                <div class="Title">
+                <div class="title2">
                     <p>Porcentaje de cumplimiento en hrs.</p>
+                     <p id="fecha2"></p>
                 </div>
+                 <script>
+                    displayDate();
+                </script>
              	<canvas id="myChart6"></canvas>
         	</div>
     	</div>
@@ -74,7 +83,6 @@
         	</div>
     	</div>
     	-->
-
 
     </div>
 <script src = "logout.js"></script>

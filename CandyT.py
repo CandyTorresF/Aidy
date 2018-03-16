@@ -31,7 +31,7 @@ def login():
         session['user'] = user
         return redirect("/home")
     else:
-        return "0"
+        return redirect("/")
 
 @app.route('/logout', methods = ['POST'])
 def logout():

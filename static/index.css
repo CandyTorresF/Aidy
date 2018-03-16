@@ -1,6 +1,6 @@
 body {
   background-color: #FFFFFF;
-  font-family: arial, helvetica, sans-serif;
+  font-family: 'Rajdhani', sans-serif;
   font-size: 0.6em;
 }
 
@@ -44,13 +44,16 @@ body {
 border-radius: 8px;
     width: 220px;
     height: 30px;
-
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 15px;
 }
 
 #pass{
 border-radius: 8px;
     width: 220px;
     height: 30px;
+    font-size: 15px;
+    font-family: 'Rajdhani', sans-serif;
 
 }
 .container button {
@@ -69,20 +72,7 @@ border-radius: 8px;
   border-bottom: 2px solid transparent;
   font-family: 'Varela Round', sans-serif;
 
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+button{
+    text-align: center;
+}

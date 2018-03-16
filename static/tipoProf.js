@@ -83,23 +83,32 @@ function fillMatrix( matrix, numRows, numCol)
             ]
           }]
         },
-          options:{
-          legend:{
-            display:false
-          },
-          scales:{
-            yAxes:[{
-              type: 'linear',
-              ticks:{
-                  max: 100,
-                  min: 0,
-                  stepsize: 1.0
-              }
-            }]
-          }
-          }
+           options: {
+            legend:{
+                display: false
+            },
+            scales: {
+                yAxes: [{
+                    ticks: {
+                    min: 0,
+                    max: 100,
+                   callback: function(value){return value+ "%"}
+                    },
+                    scaleLabel: {
+                    display: true,
+
+                    }
+                }],
+                xAxes:[{
+                    labelString: "Profesionistas"
+                }]
+            }
+        }
 
       });
+
+      document.getElementById("fecha1").innerText = displayDate();
+      document.getElementById("fecha2").innerText = displayDate();
   
     }
 //====================================================================================================================
@@ -318,21 +327,27 @@ function fillMatrix( matrix, numRows, numCol)
             ]
           }]
         },
-          options:{
-          legend:{
-            display:false
-          },
-          scales:{
-            yAxes:[{
-              type: 'linear',
-                ticks:{
-                max:100,
-                    min:0,
-                    stepsize: 1.0
-                }
-            }]
-          }
-          }
+          options: {
+            legend:{
+                display: false
+            },
+            scales: {
+                yAxes: [{
+                    ticks: {
+                    min: 0,
+                    max: 100,
+                   callback: function(value){return value+ "%"}
+                    },
+                    scaleLabel: {
+                    display: true,
+
+                    }
+                }],
+                xAxes:[{
+                    labelString: "Horas"
+                }]
+            }
+        }
       });
     }
 
@@ -450,7 +465,10 @@ function refreashAt(hours, minutes, seconds) {
     setTimeout(function() { window.location.reload(true); }, timeout);
 }
 
+
     refreashAt(01,0,0);
+
+
 
 });
 
