@@ -2,7 +2,9 @@ body {
   background-color: #FFFFFF;
   font-family: 'Rajdhani', sans-serif;
   font-size: 0.6em;
+
 }
+
 
 .logo{
   margin: auto;
@@ -75,4 +77,6 @@ border-radius: 8px;
 }
 button{
     text-align: center;
+    vertical-align: middle;
 }
+

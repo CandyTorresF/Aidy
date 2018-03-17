@@ -100,7 +100,8 @@ function fillMatrix( matrix, numRows, numCol)
                     }
                 }],
                 xAxes:[{
-                    labelString: "Profesionistas"
+                    labelString: "Profesionistas",
+                    display: true
                 }]
             }
         }
@@ -344,7 +345,8 @@ function fillMatrix( matrix, numRows, numCol)
                     }
                 }],
                 xAxes:[{
-                    labelString: "Horas"
+                    labelString: "Horas",
+                    display: true
                 }]
             }
         }

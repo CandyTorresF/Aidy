@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <script src ="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.js"></script>
     <link rel="stylesheet" href="contenido.css">
+
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
     <script type="text/javascript">
@@ -31,7 +35,7 @@
             month[10] = "Noviembre";
             month[11] = "Diciembre";
 
-            var mm = month[today.getMonth()+1];
+            var mm = month[today.getMonth()];
             var dd = today.getDate().toString();
                 dd = dd.length==2?dd:"0"+dd;
 
@@ -43,16 +47,20 @@
 
 </head>
 <body>
-    <div class = "franja">
-        <div class="logo">
+
+    <div class = "franja" width="100% auto">
+
+        <div id="logo">
             <img src="images/logo.png" width="150px" height="50px" class="center">
         </div>
+
         <form action = "/logout" method = "POST">
-         <button type = "submit" value="submit" id = "btnExit">Logout</button>
+             <button type = "submit" value="submit" id = "btnExit" class="center">Logout</button>
         </form>
+
     </div>
 
-	<div id="contentDivision" align="center">
+	<div id="contentDivision" align="center" width="100% auto">
 
 		<div class="graphTable">    
         	<div class="graphContainer fade">
